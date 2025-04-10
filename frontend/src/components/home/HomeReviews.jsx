@@ -37,16 +37,16 @@ const HomeReviews = () => {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="bg-white shadow-md hover:shadow-xl transition duration-300 rounded-2xl p-6 text-left"
+            className="bg-[#32363B] shadow-md hover:shadow-xl transition duration-300 rounded-2xl p-6 text-left"
           >
             <div className="mb-3 flex items-center">
               {[...Array(review.rating)].map((_, i) => (
                 <FaStar key={i} className="text-yellow-400 mr-1" />
               ))}
             </div>
-            <p className="text-gray-700 mb-4 italic">“{review.review}”</p>
+            <p className="text-gray-300 mb-4 italic">“{review.review}”</p>
             <h4 className="text-[#88AD35] font-semibold">{review.name}</h4>
-            <span className="text-sm text-gray-500">{review.country}</span>
+            <span className="text-sm text-gray-200">{review.country}</span>
           </div>
         ))}
       </div>

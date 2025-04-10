@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className="relative h-[100vh] flex justify-center items-center">
+    <div className="relative h-[100vh] max-h-[600px] flex justify-center items-center">
       <img
         src="./home/header.jpg"
         alt="Visa Consultancy & Travel Solutions"
@@ -14,9 +15,9 @@ const Header = () => {
         <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight max-w-3xl mb-6">
           Your Trusted Partner for Global Visa & Travel Solutions
         </h1>
-        <button className="bg-[#88AD35] hover:bg-[#6e8b2a] transition-all rounded-full cursor-pointer text-white px-6 py-3 font-semibold text-lg shadow-md">
+        <Link to="/contact" className="bg-[#88AD35] hover:bg-[#6e8b2a] transition-all rounded-full cursor-pointer text-white px-6 py-3 font-semibold text-lg shadow-md">
           Contact Us
-        </button>
+        </Link>
       </div>
     </div>
   );

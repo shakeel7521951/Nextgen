@@ -2,26 +2,39 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { RouterProvider, Outlet, createBrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import { lazy, Suspense } from "react";
+
+// Lazy loading components
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Services = lazy(() => import("./pages/Services"));
+
 const MainLayout = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Outlet />
+      </Suspense>
       <Footer />
     </div>
   );
 };
+
 const router = createBrowserRouter([
   {
     element: <MainLayout />,
     children: [
       { path: "/", element: <Home /> },
+      { path: "/home", element: <Home /> },
       { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/services", element: <Services /> },
     ],
   },
 ]);
+
 function App() {
   return <RouterProvider router={router} />;
 }
