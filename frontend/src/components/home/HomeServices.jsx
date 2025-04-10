@@ -39,11 +39,11 @@ const HomeServices = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
+            className="py-10 px-4 bg-[#32363B] rounded-xl shadow-md hover:shadow-lg transition-all"
           >
             {service.icon}
-            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-            <p className="text-gray-600 text-sm">{service.desc}</p>
+            <h3 className="text-xl text-white font-semibold mb-2">{service.title}</h3>
+            <p className="text-gray-300 text-sm">{service.desc}</p>
           </div>
         ))}
       </div>
