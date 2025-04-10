@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const reviews = [
   {
@@ -52,9 +53,9 @@ const HomeReviews = () => {
       </div>
 
       <div className="mt-10">
-        <button className="bg-[#88AD35] hover:bg-[#6e8f2c] cursor-pointer text-white px-6 py-3 rounded-full font-semibold transition-all duration-200">
+        <Link to="/services" className="bg-[#88AD35] hover:bg-[#6e8f2c] cursor-pointer text-white px-6 py-3 rounded-full font-semibold transition-all duration-200">
           Read More Reviews
-        </button>
+        </Link>
       </div>
     </div>
   );

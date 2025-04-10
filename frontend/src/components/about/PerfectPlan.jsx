@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
  
 const PerfectPlan = () => {
   return (
@@ -16,9 +17,9 @@ const PerfectPlan = () => {
       Browse our online store or visit us in person to experience the beauty of nature.
 
       </h1>
-      <button className="bg-[#88AD35] hover:bg-[#6e8b2a] transition-all rounded-full cursor-pointer text-white px-6 py-3 font-semibold text-lg shadow-md mt-6">
-        Shop Now
-      </button>
+      <Link to="/contact" className="bg-[#88AD35] hover:bg-[#6e8b2a] transition-all rounded-full cursor-pointer text-white px-6 py-3 font-semibold text-lg shadow-md mt-6">
+        Contact Now
+      </Link>
     </div>
   </div>
   )

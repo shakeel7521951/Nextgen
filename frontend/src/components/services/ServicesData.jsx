@@ -61,7 +61,7 @@ const ServicesData = () => {
             key={index}
             className="bg-[#32363b] text-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300"
           >
-            <div className="flex justify-center mb-6">
+            <div className="flex mb-6">
               <div className="bg-[#ecf4d3] p-4 rounded-full shadow-lg">{service.icon}</div>
             </div>
             <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
