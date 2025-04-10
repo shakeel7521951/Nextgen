@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutHeader from '../components/about/AboutHeader'
-import StriveCustomers from '../components/about/StriveCustomers.JSX'
+import StriveCustomers from '../components/about/StriveCustomers'
 
 import OurMission from '../components/about/OurMission'
 import PerfectPlan from '../components/about/PerfectPlan'
