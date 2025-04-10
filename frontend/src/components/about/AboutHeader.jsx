@@ -1,22 +1,7 @@
-// import React from 'react'
-
-// const AboutHeader = () => {
-//   return (
-//     <div className='relative'>
-//         <img src='./about/aboutPoster.jpg' alt='About Poster' loading='lazy' className='w-full' />
-//     </div>
-//   )
-// }
-
-// export default AboutHeader
-
-
-
-import React from 'react';
 
 const AboutHeader = () => {
   return (
-    <div className="relative h-[90vh] flex justify-center items-center">
+    <div className="relative h-[90vh] md:h-[100vh] max-h-[500px] flex justify-center items-center">
       <img
         src="/about/aboutPoster.jpg"
         alt="Visa Consultancy & Travel Solutions"
@@ -24,9 +9,9 @@ const AboutHeader = () => {
         loading="lazy"
       />
       <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center px-4">
-        <p className="text-white  md:text-lg font-medium mb-2">ABOUT</p>
-        <h1 className="text-white text-xl md:text-5xl font-bold leading-tight max-w-md mb-6">
-        We are Passionate About Our Work
+        <p className="text-white  md:text-3xl font-medium mb-2">ABOUT</p>
+        <h1 className="text-white leading-tight max-w-2xl mb-6">
+        Whether you're looking for expert guidance on visa applications or need assistance with travel logistics, we are here to make your journey seamless and stress-free.
         </h1>
       </div>
     </div>
