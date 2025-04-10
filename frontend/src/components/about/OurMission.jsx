@@ -40,6 +40,7 @@ const OurMission = () => {
         <img
           src="/about/mission.jpg"
           alt="Plants in pots"
+          loading='lazy'
           className="rounded-md w-full h-[500px] object-cover"
         />
       </div>
